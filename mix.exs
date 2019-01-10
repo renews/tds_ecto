@@ -11,7 +11,7 @@ defmodule TDS.Ecto.Mixfile do
       deps: deps(),
       description: description(),
       package: package()
-   ]
+    ]
   end
 
   # Configuration for the OTP application
@@ -24,7 +24,7 @@ defmodule TDS.Ecto.Mixfile do
   defp deps() do
     [
       {:ecto, ">= 3.0.0"},
-      {:tds, "~> 1.1"},
+      {:tds, "~> 2.0"},
       # {:tds, path: "../tds"},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:poison, ">= 0.0.0", only: :test}
@@ -38,10 +38,12 @@ defmodule TDS.Ecto.Mixfile do
   end
 
   defp package() do
-    [ name: "tds_ecto",
+    [
+      name: "tds_ecto",
       files: ["lib", "mix.exs", "README*"],
       maintainers: ["Justin Schneck", "Eric Witchin", "Milan Jaric"],
       licenses: ["Apache 2.0"],
-      links: %{"Github" => "https://github.com/livehelpnow/tds_ecto"}]
+      links: %{"Github" => "https://github.com/livehelpnow/tds_ecto"}
+    ]
   end
 end
