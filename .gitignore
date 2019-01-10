@@ -5,6 +5,7 @@ debug.log
 /deps
 erl_crash.dump
 *.ez
-.vscode/  
+.vscode/
 /doc
 .tool-versions
+.elixir_ls
